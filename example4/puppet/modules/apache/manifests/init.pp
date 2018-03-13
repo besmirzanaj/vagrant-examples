@@ -3,13 +3,13 @@
 # Installs packages for Apache and sets config files.
 #
 class apache {
-  package { ['apache2', 'apache2-mpm-prefork']:
+  package { ['httpd', ]:
     ensure => present;
   }
 
-  service { 'apache2':
+  service { 'httpd':
     ensure  => running,
-    require => Package['apache2'];
+    require => Package['httpd'];
   }
 
   apache::conf { ['apache2.conf', 'envvars', 'ports.conf']: }
