@@ -34,3 +34,4 @@ These commands will bring up the Vagrant box, SSH into it, and then remove it re
 5. Separate Web and database servers serving up static/dynamic sites via Puppet.
 6. Pulling out all the stops with cluster of seven Vagrant boxes.
 7. Single box with AWS provider and sample static/dynamic sites via Puppet.
+# vagrant-examples
