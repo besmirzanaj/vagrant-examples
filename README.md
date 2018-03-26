@@ -17,7 +17,6 @@ The host OS used in testing these examples was Mint 14 (Ubuntu-based), but any O
 From one of the example directories, type the following commands...
 
 ```
-vagrant box add precise32 http://files.vagrantup.com/precise32.box
 vagrant up
 vagrant ssh
 vagrant destroy
@@ -29,7 +28,7 @@ These commands will bring up the Vagrant box, SSH into it, and then remove it re
 
 1. Single box with some custom configuration.
 2. Single box with VirtualBox provider.
-3. Single box with VirtualBox provider and Puppet provisioning. (moving to two boxes and using two more vagrant libs)
+3. Two boxes with VirtualBox provider and Puppet provisioning. (moving to two boxes and using two more vagrant libs)
 4. Single box with Apache and sample static site installed via Puppet.
 5. Separate Web and database servers serving up static/dynamic sites via Puppet.
 6. Pulling out all the stops with cluster of seven Vagrant boxes.
